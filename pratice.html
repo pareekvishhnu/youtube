@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pratice.css">
+</head>
+<body>
+  <style>
+    body{
+      width: 100%;
+       min-height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       background-color: rgb(8, 11, 10);
+       flex-direction: column;
+    }
+    .elem{
+      max-width: 70%;
+      height: 20vh;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px aqua;
+      border-radius: .4rem;
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: 800;
+      font-family: sans-serif;
+      text-align: justify;
+      transition: all .5s ease-in-out;
+      color: whitesmoke;
+    }
+    
+    button{
+      border: none;
+      width: 16rem;
+      padding: 1renm;
+      margin: 1rem;
+      color: antiquewhite;
+      background-color: rgb(50, 50, 120);
+      font-size: 1.1rem;
+      border-radius: .4rem;
+      cursor: pointer;
+    }
+  </style>
+<h1>Show Hide </h1>
+
+<div class="elem">
+  Lorem ipsum dolor, sit amet consectetur 
+  adipisicing elit. Deserunt exercitationem 
+  dolor quo nisi cum laudantium numquam saepe
+   officiis eveniet. Ex temporibus sunt magn
+   am, ad qui labore voluptatum error atque
+    repellendus! Lorem ipsum dolor sit amet
+     consectetur adipisicing elit. Magni ver
+     itatis ullam iste voluptatem voluptatib
+     us inventore deserunt ea. Odit dignissi
+     mos consequatur optio nostrum sapiente 
+     ratione facilis culpa soluta, dolorem 
+     eveniet tempora. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Mi
+      nus fugit beatae atque natus ut quia,
+       quidem qui magnam at tempora repellen
+       dus illo eveniet accusantium quaerat n
+       emo culpa odit vel molestiae. kjfkjs
+</div>
+<button type="button" id="show-hide">Show
+hide</button>
+
+<script>
+let elem = document.querySelector(".elem");
+let hideandshow = document.getElementById
+("show-hide");
+hideandshow.addEventListener("click",()=>{
+  if(elem.style.height == "auto"){
+    elem.style.height = "20vh";
+  }else{
+    elem.style.height = "auto";
+  }
+})
+</script>
+
+
+
+<script src="pratice.js"></script>
+</html> 
